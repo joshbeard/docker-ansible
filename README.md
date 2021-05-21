@@ -6,6 +6,8 @@ A Docker image with [Ansible](https://www.ansible.com/) installed from
 This image is built from the [debian:buster-slim](https://hub.docker.com/_/debian)
 image.
 
+## Project Resources
+
 * Source Repository: <https://gitlab.com/jbeard.dev/docker-images/jbeard-ansible>
 * `Dockerfile`: <https://gitlab.com/jbeard.dev/docker-images/jbeard-ansible/-/blob/master/Dockerfile>
 * Docker Hub: <https://hub.docker.com/r/joshbeard/ansible>
@@ -31,3 +33,7 @@ docker run --rm -it \
 ```
 
 A user named `ansible` is created with a UID/GID of `1055`
+
+## Maintainers
+
+* Josh Beard, <https://joshbeard.me>
