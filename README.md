@@ -1,12 +1,13 @@
 # ansible
 
-<https://gitlab.com/jbeard.dev/docker-images/jbeard-ansible>
-
 A Docker image with [Ansible](https://www.ansible.com/) installed from
 [pip](https://pypi.org/project/ansible/).
 
 This image is built from the [debian:buster-slim](https://hub.docker.com/_/debian)
 image.
+
+* Source Repository: <https://gitlab.com/jbeard.dev/docker-images/jbeard-ansible>
+* Docker Hub: <https://hub.docker.com/r/joshbeard/ansible>
 
 ## Tags
 
