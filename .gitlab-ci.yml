@@ -61,8 +61,8 @@ push_readme:
   stage: readme
   variables:
     DOCKERHUB_USERNAME: $CI_REGISTRY_USER
-    DOCKERHUB_PASSWORD: $CI_REGISTRY_PASS
     DOCKERHUB_REPOSITORY: ${CI_REGISTRY_USER}/ansible
     README_FILEPATH: ${CI_PROJECT_DIR}/README.md
   script:
     - cd / && /entrypoint.sh
+    - cat action.log
