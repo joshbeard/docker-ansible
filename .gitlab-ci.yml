@@ -31,7 +31,8 @@ variables:
       -f Dockerfile .
     - docker push ${CI_REGISTRY_IMAGE}:${ANSIBLE_VERSION}
     - if [ "$LATEST" == "true" ]; then
-    -   docker push ${CI_REGISTRY_IMAGE}:${ANSIBLE_VERSION} ${CI_REGISTRY_IMAGE}:latest
+    -   docker tag ${CI_REGISTRY_IMAGE}:${ANSIBLE_VERSION} ${CI_REGISTRY_IMAGE}:latest
+    -   docker push ${CI_REGISTRY_IMAGE}:latest
     - fi
   only:
     refs:
