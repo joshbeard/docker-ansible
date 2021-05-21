@@ -7,6 +7,7 @@ This image is built from the [debian:buster-slim](https://hub.docker.com/_/debia
 image.
 
 * Source Repository: <https://gitlab.com/jbeard.dev/docker-images/jbeard-ansible>
+* `Dockerfile`: <https://gitlab.com/jbeard.dev/docker-images/jbeard-ansible/-/blob/master/Dockerfile>
 * Docker Hub: <https://hub.docker.com/r/joshbeard/ansible>
 
 ## Tags
