@@ -31,7 +31,7 @@ RUN set -eux; \
     rm -rf /var/lib/apt/lists/*
 
 ARG ansible_version=4.0.0
-RUN pip3 install ansible==${ansible_version}
+RUN pip3 install wheel && pip3 install ansible==${ansible_version}
 
 ARG USER_UID=1055
 ARG USER_GID=1055
