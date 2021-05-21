@@ -1,0 +1,67 @@
+# .gitlab-ci.yml for ansible
+#
+# == Reference:
+#   - https://docs.gitlab.com/ee/ci/yaml/
+#   - https://docs.gitlab.com/ee/ci/multi_project_pipelines.html
+#
+stages:
+  - build
+  - readme
+
+variables:
+  CI_REGISTRY_IMAGE: index.docker.io/joshbeard/ansible
+  CI_REGISTRY: docker.io
+  CI_REGISTRY_USER: joshbeard
+
+# ------------------------------------------------------------------------------
+# == Docker Build
+# ------------------------------------------------------------------------------
+#
+.docker_build:
+  image: docker:20
+  stage: build
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u ${CI_REGISTRY_USER} -p ${CI_REGISTRY_PASS} ${CI_REGISTRY}
+  script:
+    - docker build --pull
+      -t ${CI_REGISTRY_IMAGE}:${ANSIBLE_VERSION}
+      --build-arg ansible_version=${ANSIBLE_VERSION}
+      -f Dockerfile .
+    - docker push ${CI_REGISTRY_IMAGE}:${ANSIBLE_VERSION}
+    - if [ "$LATEST" == "true" ]; then
+    -   docker push ${CI_REGISTRY_IMAGE}:${ANSIBLE_VERSION} ${CI_REGISTRY_IMAGE}:latest
+    - fi
+  only:
+    refs:
+      - master
+
+build_2.10.7:
+  extends: .docker_build
+  variables:
+    ANSIBLE_VERSION: '2.10.7'
+
+build_3.4.0:
+  extends: .docker_build
+  variables:
+    ANSIBLE_VERSION: '3.4.0'
+
+build_4.0.0:
+  extends: .docker_build
+  variables:
+    LATEST: true
+    ANSIBLE_VERSION: '4.0.0'
+
+push_readme:
+  image:
+    name: peterevans/dockerhub-description:2
+    entrypoint: ['']
+  stage: readme
+  variables:
+    DOCKERHUB_USERNAME: $CI_REGISTRY_USER
+    DOCKERHUB_PASSWORD: $CI_REGISTRY_PASS
+    DOCKERHUB_REPOSITORY: ${CI_REGISTRY_USER}/ansible
+    README_FILEPATH: ${CI_PROJECT_DIR}/README.md
+  script:
+    - cd / && /entrypoint.sh
