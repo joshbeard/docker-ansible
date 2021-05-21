@@ -50,7 +50,7 @@ build_3.4.0:
 build_4.0.0:
   extends: .docker_build
   variables:
-    LATEST: true
+    LATEST: 'true'
     ANSIBLE_VERSION: '4.0.0'
 
 push_readme:
