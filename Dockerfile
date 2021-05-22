@@ -16,6 +16,7 @@ RUN set -eux; \
     bash \
     cargo \
     curl \
+    git \
     jq \
     libssl-dev \
     openssh-client \
