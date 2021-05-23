@@ -5,8 +5,8 @@
 # Additional tools are also provided in this image.
 # This is based on Ubuntu or Debian
 # =============================================================================
-ARG src_image_name=debian
-ARG src_image_tag=buster-slim
+ARG src_image_name=python
+ARG src_image_tag=3.9-slim-buster
 
 FROM ${src_image_name}:${src_image_tag}
 
@@ -47,3 +47,5 @@ RUN pip3 install wheel && pip3 install ansible==${ansible_version}
 USER ansible
 RUN mkdir /home/ansible/.ssh
 WORKDIR /home/ansible
+
+ENTRYPOINT [""]
