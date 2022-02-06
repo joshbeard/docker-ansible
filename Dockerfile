@@ -6,7 +6,7 @@
 # This is based on Ubuntu or Debian
 # =============================================================================
 ARG src_image_name=python
-ARG src_image_tag=3.9-slim-buster
+ARG src_image_tag=3.10-slim-buster
 
 FROM ${src_image_name}:${src_image_tag}
 
