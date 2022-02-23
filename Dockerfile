@@ -6,12 +6,13 @@
 # This is based on Ubuntu or Debian
 # =============================================================================
 ARG src_image_name=python
-ARG src_image_tag=3.10-slim-buster
+ARG src_image_tag=3.10-slim
 
 FROM ${src_image_name}:${src_image_tag}
 
 RUN set -eux; \
     apt-get update; \
+    apt-get upgrade -y; \
     apt-get install -y --no-install-recommends \
     bash \
     cargo \
@@ -29,6 +30,7 @@ RUN set -eux; \
     unzip \
     zip \
     ; \
+    apt-get clean; \
     rm -rf /var/lib/apt/lists/*
 
 ARG USER_UID=1055
@@ -41,7 +43,7 @@ RUN groupadd -g $USER_GID ansible \
   --shell /sbin/nologin \
   ansible
 
-ARG ansible_version=4.0.0
+ARG ansible_version=5.4.0
 RUN pip3 install wheel && pip3 install ansible==${ansible_version}
 
 USER ansible
