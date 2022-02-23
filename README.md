@@ -3,7 +3,7 @@
 A Docker image with [Ansible](https://www.ansible.com/) installed from
 [pip](https://pypi.org/project/ansible/).
 
-This image is built from the [python:3.x-slim-buster](https://hub.docker.com/_/python)
+This image is built from the [python:3.x-slim](https://hub.docker.com/_/python)
 image.
 
 ## Project Resources
