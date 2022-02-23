@@ -56,3 +56,8 @@ push_readme:
   script:
     - cd / && /entrypoint.sh
     - cat action.log
+  only:
+    variables:
+      - $ANSIBLE_VERSION
+    refs:
+      - master
