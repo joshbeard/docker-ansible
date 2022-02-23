@@ -38,26 +38,11 @@ variables:
     refs:
       - master
 
-build_2.10.7:
+build:
   extends: .docker_build
-  variables:
-    ANSIBLE_VERSION: '2.10.7'
-
-build_3.4.0:
-  extends: .docker_build
-  variables:
-    ANSIBLE_VERSION: '3.4.0'
-
-build_4.0.0:
-  extends: .docker_build
-  variables:
-    ANSIBLE_VERSION: '4.0.0'
-
-build_5.3.0:
-  extends: .docker_build
-  variables:
-    LATEST: 'true'
-    ANSIBLE_VERSION: '5.3.0'
+  only:
+    variables:
+      - $ANSIBLE_VERSION
 
 push_readme:
   image:
