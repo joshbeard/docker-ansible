@@ -8,8 +8,8 @@ image.
 
 ## Project Resources
 
-* Source Repository: <https://gitlab.com/jbeard.dev/docker-images/jbeard-ansible>
-* `Dockerfile`: <https://gitlab.com/jbeard.dev/docker-images/jbeard-ansible/-/blob/master/Dockerfile>
+* Source Repository: <https://github.com/joshbeard/docker-ansible>
+* `Dockerfile`: <https://github.com/joshbeard/docker-ansible/blob/master/Dockerfile>
 * Docker Hub: <https://hub.docker.com/r/joshbeard/ansible>
 
 ## Tags
