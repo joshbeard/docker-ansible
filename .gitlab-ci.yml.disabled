@@ -1,5 +1,7 @@
 # .gitlab-ci.yml for ansible
 #
+# NOTE: This is currently disabled since a GitHub workflow is used.
+#
 # == Reference:
 #   - https://docs.gitlab.com/ee/ci/yaml/
 #   - https://docs.gitlab.com/ee/ci/multi_project_pipelines.html
