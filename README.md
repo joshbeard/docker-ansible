@@ -14,7 +14,8 @@ image.
 
 ## Tags
 
-* `5.6.0`, `latest`
+* `5.7.0`, `latest`
+* `5.6.0`
 * `5.5.0`
 * `5.4.0`
 * `5.3.0`
@@ -32,7 +33,7 @@ docker run --rm -it \
   -v ansible-ssh-private-key:/home/ansible/.ssh/id_rsa \
   -v ${PWD}:/playbook \
   -w /playbook \
-  joshbeard/ansible:5.6.0 \
+  joshbeard/ansible:5.7.0 \
   ansible-playbook -i inventory.ini site.yml
 ```
 
