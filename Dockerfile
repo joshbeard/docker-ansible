@@ -43,7 +43,7 @@ RUN groupadd -g $USER_GID ansible \
   --shell /sbin/nologin \
   ansible
 
-ARG ansible_version=5.8.0
+ARG ansible_version=5.9.0
 RUN pip3 install wheel && pip3 install ansible==${ansible_version}
 
 USER ansible
