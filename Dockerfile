@@ -40,7 +40,7 @@ RUN groupadd -g $USER_GID ansible \
   -u $USER_UID \
   -g $USER_GID \
   --home-dir /home/ansible \
-  --shell /sbin/nologin \
+  --shell /bin/bash \
   ansible
 
 ARG ansible_version=6.0.0

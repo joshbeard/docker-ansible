@@ -1,7 +1,7 @@
 # ansible
 
 A Docker image with [Ansible](https://www.ansible.com/) installed from
-[pip](https://pypi.org/project/ansible/).
+[pip](https://pypi.org/project/ansible/) and a few helpful dependencies.
 
 This image is built from the [python:3.x-slim](https://hub.docker.com/_/python)
 image.
@@ -38,7 +38,8 @@ docker run --rm -it \
   ansible-playbook -i inventory.ini site.yml
 ```
 
-A user named `ansible` is created with a UID/GID of `1055`
+A user named `ansible` is created with a UID/GID of `1055` and a home directory
+at `/home/ansible`.
 
 ## Maintainers
 
