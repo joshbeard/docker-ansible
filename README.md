@@ -14,16 +14,15 @@ image.
 
 ## Tags
 
-* `5.9.0`, `latest`
-* `5.8.0`
-* `5.7.0`
-* `5.6.0`
-* `5.5.0`
-* `5.4.0`
-* `5.3.0`
-* `4.0.0`
-* `3.4.0`
-* `2.10.7`
+* `6.0.0`, `6`, `latest`
+* `5.9.0`, `5`
+* [More tags](https://hub.docker.com/r/joshbeard/ansible/tags)
+
+### Ansible Release Notes
+
+* [Ansible v6 Release Notes](https://github.com/ansible-community/ansible-build-data/blob/main/6/CHANGELOG-v6.rst)
+* [Ansible v5 Release Notes](https://github.com/ansible-community/ansible-build-data/blob/main/5/CHANGELOG-v5.rst)
+* [Ansible Announcements Google Group](https://groups.google.com/g/ansible-announce)
 
 ## Running
 
