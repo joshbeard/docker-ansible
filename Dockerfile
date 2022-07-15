@@ -43,7 +43,7 @@ RUN groupadd -g $USER_GID ansible \
   --shell /bin/bash \
   ansible
 
-ARG ansible_version=6.0.0
+ARG ansible_version=6.1.0
 RUN pip3 install wheel && pip3 install ansible==${ansible_version}
 
 USER ansible

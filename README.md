@@ -14,7 +14,7 @@ image.
 
 ## Tags
 
-* `6.0.0`, `6`, `latest`
+* `6.1.0`, `6`, `latest`
 * `5.10.0`, `5`
 * [More tags](https://hub.docker.com/r/joshbeard/ansible/tags)
 
