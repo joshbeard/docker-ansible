@@ -12,7 +12,6 @@ FROM ${src_image_name}:${src_image_tag}
 
 RUN set -eux; \
     apt-get update; \
-    apt-get upgrade -y; \
     apt-get install -y --no-install-recommends \
     bash \
     cargo \
@@ -36,7 +35,7 @@ RUN set -eux; \
 ARG USER_UID=1055
 ARG USER_GID=1055
 RUN groupadd -g $USER_GID ansible \
-  && useradd -m \
+  && useradd -l -m \
   -u $USER_UID \
   -g $USER_GID \
   --home-dir /home/ansible \
@@ -44,7 +43,8 @@ RUN groupadd -g $USER_GID ansible \
   ansible
 
 ARG ansible_version=6.1.0
-RUN pip3 install wheel && pip3 install ansible==${ansible_version}
+RUN pip3 install --no-cache-dir wheel \
+    && pip3 install --no-cache-dir ansible==${ansible_version}
 
 USER ansible
 RUN mkdir /home/ansible/.ssh
