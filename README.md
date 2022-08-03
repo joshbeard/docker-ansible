@@ -1,5 +1,10 @@
 # ansible
 
+[![docker_build](https://github.com/joshbeard/docker-ansible/actions/workflows/build.yml/badge.svg)](https://github.com/joshbeard/docker-ansible/actions/workflows/build.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/389718765d6840b0a2c60849578db276)](https://www.codacy.com/gh/joshbeard/docker-ansible/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=joshbeard/docker-ansible&amp;utm_campaign=Badge_Grade)
+[![CodeFactor](https://www.codefactor.io/repository/github/joshbeard/docker-ansible/badge)](https://www.codefactor.io/repository/github/joshbeard/docker-ansible)
+[![DeepSource](https://deepsource.io/gh/joshbeard/docker-ansible.svg/?label=active+issues&token=9CLCfY4X9cQBkbED6c4pMaFn)](https://deepsource.io/gh/joshbeard/docker-ansible/?ref=repository-badge)
+
 A Docker image with [Ansible](https://www.ansible.com/) installed from
 [pip](https://pypi.org/project/ansible/) and a few helpful dependencies.
 
