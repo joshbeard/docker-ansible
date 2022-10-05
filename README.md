@@ -20,14 +20,17 @@ image.
 ## Tags
 
 * `6.4.0`, `6`, `latest`
-* `5.10.0`, `5`
-* [More tags](https://hub.docker.com/r/joshbeard/ansible/tags)
+
+__Note:__ This Docker image will maintain tags that are supported upstream, as
+listed in the [Ansible Releases and Maintenance](https://docs.ansible.com/ansible/latest/reference_appendices/release_and_maintenance.html)
+document.
 
 ### Ansible Release Notes
 
 * [Ansible v6 Release Notes](https://github.com/ansible-community/ansible-build-data/blob/main/6/CHANGELOG-v6.rst)
-* [Ansible v5 Release Notes](https://github.com/ansible-community/ansible-build-data/blob/main/5/CHANGELOG-v5.rst)
+* [Ansible Releases and Maintenance](https://docs.ansible.com/ansible/latest/reference_appendices/release_and_maintenance.html)
 * [Ansible Announcements Google Group](https://groups.google.com/g/ansible-announce)
+* [Ansible package on PyPI](https://pypi.org/project/ansible/)
 
 ## Running
 
