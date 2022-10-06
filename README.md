@@ -20,10 +20,10 @@ image.
 ## Tags
 
 * `6.4.0`, `6`, `latest`
+* [See all tags](https://hub.docker.com/r/joshbeard/ansible/tags)
 
-__Note:__ This Docker image will maintain tags that are supported upstream, as
-listed in the [Ansible Releases and Maintenance](https://docs.ansible.com/ansible/latest/reference_appendices/release_and_maintenance.html)
-document.
+Refer to the [Tag End of Life and Deletion](#tag-end-of-life-and-deletion)
+section below for information about deprecated image tags.
 
 ### Ansible Release Notes
 
@@ -52,3 +52,22 @@ at `/home/ansible`.
 ## Maintainers
 
 * Josh Beard, <https://joshbeard.me>
+
+## Tag End of Life and Deletion
+
+This Docker image will maintain tags that are supported upstream, as
+listed in the [Ansible Releases and Maintenance](https://docs.ansible.com/ansible/latest/reference_appendices/release_and_maintenance.html)
+document.
+
+The following tags are for versions that have reached end of life and will be
+deleted in the future:
+
+<!-- BEGIN deletion_table -->
+| Tag        | Deletion Date
+| ---------- | ----------------------
+| `2.10.7`   | April 24, 2023
+| `3.4.0`    | April 24, 2023
+| `4.0.0`    | April 24, 2023
+| `5`, `5.*` | October 6, 2023
+<!-- END deletion_table -->
+
