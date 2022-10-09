@@ -60,7 +60,7 @@ listed in the [Ansible Releases and Maintenance](https://docs.ansible.com/ansibl
 document.
 
 The following tags are for versions that have reached end of life and will be
-deleted in the future:
+deleted according to the following schedule:
 
 <!-- BEGIN deletion_table -->
 | Tag        | Deletion Date
