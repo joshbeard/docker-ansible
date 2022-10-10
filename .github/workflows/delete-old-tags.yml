@@ -1,6 +1,6 @@
 # This workflow runs daily and deletes tags that have a scheduled deletion date
 # listed in a table in the README.md file.
-# It uses the action from https://github.com/joshbeard/docker-ansible
+# It uses the action from https://github.com/joshbeard/docker-hub-tag-delete
 name: delete_expired_image_tags
 
 on:
