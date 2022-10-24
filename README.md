@@ -60,7 +60,8 @@ listed in the [Ansible Releases and Maintenance](https://docs.ansible.com/ansibl
 document.
 
 The following tags are for versions that have reached end of life and will be
-deleted according to the following schedule:
+[automatically](https://github.com/joshbeard/docker-hub-tag-delete) deleted on
+the specified date.
 
 <!-- BEGIN deletion_table -->
 | Tag        | Deletion Date
