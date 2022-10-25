@@ -20,6 +20,7 @@ image.
 ## Tags
 
 * `6.5.0`, `6`, `latest`
+* Pre-release: `7.0.0a2`, `7`
 * [See all tags](https://hub.docker.com/r/joshbeard/ansible/tags)
 
 Refer to the [Tag End of Life and Deletion](#tag-end-of-life-and-deletion)
