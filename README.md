@@ -6,7 +6,7 @@
 [![DeepSource](https://deepsource.io/gh/joshbeard/docker-ansible.svg/?label=active+issues&token=9CLCfY4X9cQBkbED6c4pMaFn)](https://deepsource.io/gh/joshbeard/docker-ansible/?ref=repository-badge)
 
 A Docker image with [Ansible](https://www.ansible.com/) installed from
-[pip](https://pypi.org/project/ansible/) and a few helpful dependencies.
+[pip](https://pypi.org/project/ansible/).
 
 This image is built from the [python:3.x-slim](https://hub.docker.com/_/python)
 image.
@@ -19,7 +19,7 @@ image.
 
 ## Tags
 
-* `6.5.0`, `6`, `latest`
+* `6.6.0`, `6`, `latest`
 * Pre-release: `7.0.0a2`, `7`
 * [See all tags](https://hub.docker.com/r/joshbeard/ansible/tags)
 
