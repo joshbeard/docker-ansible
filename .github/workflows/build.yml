@@ -17,11 +17,11 @@ jobs:
       matrix:
         include:
           -
-            tags: 'joshbeard/ansible:6.6.0,joshbeard/ansible:6,joshbeard/ansible:latest'
-            build-args: ansible_version=6.6.0
+            tags: 'joshbeard/ansible:7.0.0,joshbeard/ansible:7,joshbeard/ansible:latest'
+            build-args: ansible_version=7.0.0
           -
-            tags: 'joshbeard/ansible:7.0.0rc1,joshbeard/ansible:7'
-            build-args: ansible_version=7.0.0rc1
+            tags: 'joshbeard/ansible:6.6.0,joshbeard/ansible:6'
+            build-args: ansible_version=6.6.0
 
     steps:
       -
