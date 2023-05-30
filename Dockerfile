@@ -42,7 +42,7 @@ RUN groupadd -g $USER_GID ansible \
   --shell /bin/bash \
   ansible
 
-ARG ansible_version=7.6.0
+ARG ansible_version=8.0.0
 RUN pip3 install --no-cache-dir ansible==${ansible_version}
 
 USER ansible
