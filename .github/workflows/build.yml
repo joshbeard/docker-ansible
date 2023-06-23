@@ -17,15 +17,11 @@ jobs:
       matrix:
         include:
           -
-            tags: 'joshbeard/ansible:8.0.0,joshbeard/ansible:8,joshbeard/ansible:latest'
-            build-args: ansible_version=8.0.0
+            tags: 'joshbeard/ansible:8.1.0,joshbeard/ansible:8,joshbeard/ansible:latest'
+            build-args: ansible_version=8.1.0
           -
-            tags: 'joshbeard/ansible:7.6.0,joshbeard/ansible:7'
-            build-args: ansible_version=7.6.0
-          -
-            tags: 'joshbeard/ansible:6.6.0,joshbeard/ansible:6'
-            build-args: ansible_version=6.6.0
-
+            tags: 'joshbeard/ansible:7.7.0,joshbeard/ansible:7'
+            build-args: ansible_version=7.7.0
     steps:
       -
         name: Checkout
