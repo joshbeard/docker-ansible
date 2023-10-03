@@ -6,7 +6,7 @@
 # This is based on Ubuntu or Debian
 # =============================================================================
 ARG src_image_name=python
-ARG src_image_tag=3.11-slim
+ARG src_image_tag=3.12-slim
 
 FROM ${src_image_name}:${src_image_tag}
 
