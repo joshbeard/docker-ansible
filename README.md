@@ -19,7 +19,8 @@ image.
 
 ## Tags
 
-* `8.1.0`, `8`, `latest` (current)
+* `9.2.0`, `9`, `latest` (current)
+* `8.1.0`, `8` (end of life)
 * `7.7.0`, `7` (end of life)
 * [See all tags](https://hub.docker.com/r/joshbeard/ansible/tags)
 
@@ -28,6 +29,7 @@ section below for information about deprecated image tags.
 
 ### Ansible Release Notes
 
+* [Ansible v9 Release Notes](https://github.com/ansible-community/ansible-build-data/blob/main/9/CHANGELOG-v9.rst)
 * [Ansible v8 Release Notes](https://github.com/ansible-community/ansible-build-data/blob/main/6/CHANGELOG-v8.rst)
 * [Ansible v7 Release Notes](https://github.com/ansible-community/ansible-build-data/blob/main/6/CHANGELOG-v7.rst)
 * [Ansible Releases and Maintenance](https://docs.ansible.com/ansible/latest/reference_appendices/release_and_maintenance.html)
