@@ -19,9 +19,8 @@ image.
 
 ## Tags
 
-* `9.2.0`, `9`, `latest` (current)
-* `8.1.0`, `8` (end of life)
-* `7.7.0`, `7` (end of life)
+* `10.1.0`, `10`, `latest` (current)
+* `9.7.0`, `9` (end of life November 2024)
 * [See all tags](https://hub.docker.com/r/joshbeard/ansible/tags)
 
 Refer to the [Tag End of Life and Deletion](#tag-end-of-life-and-deletion)
@@ -29,9 +28,8 @@ section below for information about deprecated image tags.
 
 ### Ansible Release Notes
 
+* [Ansible v10 Release Notes](https://github.com/ansible-community/ansible-build-data/blob/main/10/CHANGELOG-v10.rst)
 * [Ansible v9 Release Notes](https://github.com/ansible-community/ansible-build-data/blob/main/9/CHANGELOG-v9.rst)
-* [Ansible v8 Release Notes](https://github.com/ansible-community/ansible-build-data/blob/main/6/CHANGELOG-v8.rst)
-* [Ansible v7 Release Notes](https://github.com/ansible-community/ansible-build-data/blob/main/6/CHANGELOG-v7.rst)
 * [Ansible Releases and Maintenance](https://docs.ansible.com/ansible/latest/reference_appendices/release_and_maintenance.html)
 * [Ansible Announcements Google Group](https://groups.google.com/g/ansible-announce)
 * [Ansible package on PyPI](https://pypi.org/project/ansible/)
@@ -73,5 +71,6 @@ the specified date.
 | `5`, `5.*` | October 6, 2023
 | `6`, `6.*` | October 6, 2023
 | `7`, `7.*` | December 1, 2023
+| `8`, `8.*` | November 30, 2024
+| `9`, `9.*` | November 30, 2024
 <!-- END deletion_table -->
-

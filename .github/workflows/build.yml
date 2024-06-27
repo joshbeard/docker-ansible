@@ -17,14 +17,11 @@ jobs:
       matrix:
         include:
           -
-            tags: 'joshbeard/ansible:9.2.0,joshbeard/ansible:9,joshbeard/ansible:latest'
-            build-args: ansible_version=9.2.0
+            tags: 'joshbeard/ansible:10.1.0,joshbeard/ansible:10,joshbeard/ansible:latest'
+            build-args: ansible_version=10.1.0
           -
-            tags: 'joshbeard/ansible:8.1.0,joshbeard/ansible:8'
-            build-args: ansible_version=8.1.0
-          -
-            tags: 'joshbeard/ansible:7.7.0,joshbeard/ansible:7'
-            build-args: ansible_version=7.7.0
+            tags: 'joshbeard/ansible:9.7.0,joshbeard/ansible:9,joshbeard/ansible:latest'
+            build-args: ansible_version=9.7.0
     steps:
       -
         name: Checkout
@@ -58,4 +55,4 @@ jobs:
           pass: ${{ secrets.DOCKERHUB_TOKEN }}
           slug: joshbeard/ansible
           readme: ./README.md
-          description: Image containing Ansible installed from pip
+          description: Image containing Ansible installed from pypi
