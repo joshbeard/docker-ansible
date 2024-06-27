@@ -6,6 +6,9 @@ name: delete_expired_image_tags
 on:
   schedule:
     - cron: "0 23 * * *"
+  push:
+    branches:
+      - 'master'
 
 jobs:
   delete_tags:
