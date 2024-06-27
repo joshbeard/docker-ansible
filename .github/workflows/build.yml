@@ -24,7 +24,7 @@ jobs:
           - tags: 'joshbeard/ansible:10.1.0,joshbeard/ansible:10,joshbeard/ansible:latest,ghcr.io/joshbeard/ansible:10.1.0,ghcr.io/joshbeard/ansible:10,ghcr.io/joshbeard/ansible:latest'
             build-args: ansible_version=10.1.0
 
-          - tags: 'joshbeard/ansible:9.7.0,joshbeard/ansible:9,joshbeard/ansible:latest,gchr.io/joshbeard/ansible:9.7.0,ghcr.io/joshbeard/ansible:9,ghcr.io/joshbeard/ansible:latest'
+          - tags: 'joshbeard/ansible:9.7.0,joshbeard/ansible:9,ghcr.io/joshbeard/ansible:9.7.0,ghcr.io/joshbeard/ansible:9'
             build-args: ansible_version=9.7.0
 
     steps:
