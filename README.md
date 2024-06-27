@@ -1,7 +1,7 @@
 # ansible
 
 A Docker image with [Ansible](https://www.ansible.com/) installed from
-[pip](https://pypi.org/project/ansible/).
+[pip](https://pypi.org/project/ansible/) and a few helpful dependencies.
 
 This image is built from the [python:3.x-slim](https://hub.docker.com/_/python)
 image.
@@ -63,9 +63,6 @@ the specified date.
 <!-- BEGIN deletion_table -->
 | Tag        | Deletion Date
 | ---------- | ----------------------
-| `5`, `5.*` | October 6, 2023
-| `6`, `6.*` | October 6, 2023
-| `7`, `7.*` | December 1, 2023
 | `8`, `8.*` | November 30, 2024
 | `9`, `9.*` | November 30, 2024
 <!-- END deletion_table -->
