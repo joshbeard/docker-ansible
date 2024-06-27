@@ -6,6 +6,9 @@ A Docker image with [Ansible](https://www.ansible.com/) installed from
 This image is built from the [python:3.x-slim](https://hub.docker.com/_/python)
 image.
 
+* DockerHub image: `joshbeard/ansible`
+* GitHub image: `ghcr.io/joshbeard/ansible`
+
 ## Project Resources
 
 * Source Repository: <https://github.com/joshbeard/docker-ansible>
